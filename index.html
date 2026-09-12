@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Transport Information Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🎓 College Transport</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#buses">Bus Routes</a>
+            <a href="#pickup">Pickup Points</a>
+        </nav>
+    </header>
+
+
+    <!-- Home / Dashboard -->
+    <section id="home" class="hero">
+        <div>
+            <h1>College Transport Information Portal</h1>
+            <h2>Student Details</h2>
+
+<div class="student-details">
+    <p><strong>Student Name:</strong> RAHUL.J</p>
+    <p><strong>Register Number:</strong> 25134021802521019</p>
+    <p><strong>Department:</strong> B.Sc Computer Science</p>
+    <p><strong>College ID:</strong> 402</p>
+    <p><strong>College:</strong> Manalmedu Arts and Science College</p>
+</div>
+
+            <p>
+                Find college bus routes, pickup points and timings
+                easily in one place.
+            </p>
+
+            <a href="#buses" class="btn">View Bus Routes</a>
+        </div>
+    </section>
+
+
+    <!-- Search -->
+    <section class="search-section">
+
+        <h2>Search Transport Information</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search bus number, route or pickup point..."
+            onkeyup="searchTransport()"
+        >
+
+    </section>
+
+
+    <!-- Bus Routes -->
+    <section id="buses" class="section">
+
+        <h2>🚌 Bus Routes</h2>
+
+        <div id="busContainer" class="cards">
+
+            <div class="card">
+                <h3>Bus 101</h3>
+                <p><b>Route:</b> Mayiladuthurai → College</p>
+                <p><b>Starting Point:</b> Mayiladuthurai</p>
+                <p><b>Destination:</b> College</p>
+            </div>
+
+            <div class="card">
+                <h3>Bus 102</h3>
+                <p><b>Route:</b> Nannilam → College</p>
+                <p><b>Starting Point:</b> Nannilam</p>
+                <p><b>Destination:</b> College</p>
+            </div>
+
+            <div class="card">
+                <h3>Bus 103</h3>
+                <p><b>Route:</b> Sirkazhi → College</p>
+                <p><b>Starting Point:</b> Sirkazhi</p>
+                <p><b>Destination:</b> College</p>
+            </div>
+
+            <div class="card">
+                <h3>Bus 104</h3>
+                <p><b>Route:</b> Kumbakonam → College</p>
+                <p><b>Starting Point:</b> Kumbakonam</p>
+                <p><b>Destination:</b> College</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Pickup Points -->
+    <section id="pickup" class="section">
+
+        <h2>📍 Pickup Points & Timings</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Mayiladuthurai</h3>
+                <p><b>Bus:</b> 101</p>
+                <p><b>Pickup Time:</b> 7:15 AM</p>
+            </div>
+
+            <div class="card">
+                <h3>Nannilam</h3>
+                <p><b>Bus:</b> 102</p>
+                <p><b>Pickup Time:</b> 7:20 AM</p>
+            </div>
+
+            <div class="card">
+                <h3>Sirkazhi</h3>
+                <p><b>Bus:</b> 103</p>
+                <p><b>Pickup Time:</b> 7:00 AM</p>
+            </div>
+
+            <div class="card">
+                <h3>Kumbakonam</h3>
+                <p><b>Bus:</b> 104</p>
+                <p><b>Pickup Time:</b> 6:50 AM</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript Interaction -->
+    <section class="interaction">
+
+        <h2>⚡ Quick Information</h2>
+
+        <button onclick="showMessage()">
+            Check Transport Status
+        </button>
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 College Transport Information Portal</p>
+        <p>Developed using HTML, CSS & JavaScript</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
